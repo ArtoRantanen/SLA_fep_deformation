@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import time
+import math
 
 
 def set_size(len):
@@ -26,6 +27,9 @@ class Printer:
     len_y = 2
     build_plate_height = 0.05
     fep_thickness = 0.125
+    fep_density = 1300
+    resin_density = 1175
+    total_internal_reflection = math.degrees(math.asin(resin_density/fep_density))
 
 
 # damage characteristics
